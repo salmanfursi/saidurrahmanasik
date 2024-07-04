@@ -24,7 +24,7 @@ const Services = () => {
         </div>
         <div className="text-center">
           <p className="text-3xl md:text-lg">
-            Please email at <a href="mailto:filmsbyjubaer@gmail.com" className="underline text-red-400">filmsbyjubaer@gmail.com</a> for contacting me.
+            Please email at <a href="mailto:filmsbyjubaer@gmail.com" className="underline text-red-400">saidurrahmanasik90@gmail.com</a> for contacting me.
           </p>
         </div>
       </div>
