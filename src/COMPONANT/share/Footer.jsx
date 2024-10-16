@@ -7,10 +7,10 @@ const Footer = () => {
       <div className="flex justify-center py-2">
         <img src="https://i.ibb.co/pRF10Rj/asikbhai-removebg-preview.png" alt="Your Logo" className="w-14 rounded-full border-white border-2" />
       </div>
-        <div className="text-sm mb-1">
+        <div className="mb-1">
           saidurrahmanasik@gmail.com
         </div>
-        <div className="text-xs">
+        <div className="text-lg">
           ©2024 All Rights Reserved by Jubaer Talukder
         </div>
         <div className="flex space-x-2 mt-2">

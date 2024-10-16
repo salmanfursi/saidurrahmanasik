@@ -1,27 +1,26 @@
-import About from "./COMPONANT/About";
-import Banner from "./COMPONANT/Banner";
-import Contact from "./COMPONANT/Contact";
-import FindMe from "./COMPONANT/FindMe";
-import Footer from "./COMPONANT/Footer";
-import Header from "./COMPONANT/Header";
-import Projects from "./COMPONANT/Projects";
-import Service from "./COMPONANT/Service";
-import Services from "./COMPONANT/Services";
-import Skill from "./COMPONANT/Skill";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainLayout from "./MainLayout";
+import Landing from "./pages/landing";
+import NotFound from "./COMPONANT/share/NotFound";
+import MyWorks from "./COMPONANT/my-works/MyWorks";
+import FontsWork from "./COMPONANT/my-works/FontsWork";
+import Graphics from "./COMPONANT/my-works/Graphics";
 
 const App = () => {
   return (
-    <div className='bg-black'>
-      <Header></Header>
-      <Banner></Banner>
-      <FindMe></FindMe>
-      <Services></Services>
-      <About></About>
-      <Contact></Contact>
-      <Footer></Footer>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Landing />} />
+          <Route path="work" element={<MyWorks />}>
+            <Route path="fonts" element={<FontsWork />} />
+            <Route path="graphics" element={<Graphics />} />
+          </Route>
+        </Route>
 
-    </div>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 };
 
